@@ -3,7 +3,7 @@ export const me_info = {
   lname: 'ASSAWARATTANAKORN',
   pic: 'me.webp',
   about_me:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
+    "Computer Engineer graduate passionate about full stack developer. Highly-capable Fast learner. passionate in a range of modern technologies including React, Nodejs, Jenkins, MySQL, and more. ",
 };
 
 export const skilldatas = [
@@ -65,7 +65,7 @@ export const work = [
     project: 'GAMESTORE',
     type: 'Student Project',
     github: 'https://github.com/thanatath/GameStore',
-    url: 'https://vcaptcha.work/',
+    url: 'https://gamestore.shibasan.net/',
     detail: 'GameStore website with basic shop and payment system (use pure javascript, css and html)',
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
     year: '2021',
@@ -74,11 +74,31 @@ export const work = [
     project: 'Place reservation system',
     type: 'Student Project',
     github: 'https://github.com/thanatath/Place-reservation-system-Frontend',
-    url: 'https://vcaptcha.work/',
+    url: 'https://prs.shibasan.net/',
     detail: 'Place reservation system for reservation of places in KMITL campus',
     stack: 'VueJS, NodeJS, ExpressJS, Docker, Portainer, Parse Server, MongoDB',
     year: '2020',
     pic: 'kmitlplace.webp',
+  }
+  
+];
+
+
+export const hobby = [
+  {
+    label: 'THAILAND BEST SKILLS',
+    detail: 'Compete in a TV show on Channel 5 about a team-based technical problem solving race.',
+    pic: 'tbs.webp',
+  },
+  {
+    label: 'Network Academic Skills',
+    detail: 'Compete in Academic Skills Competition with Network Technology in an international race.',
+    pic: 'it.webp',
+  },
+  {
+    label: 'Music Composer',
+    detail: 'i`m interesting in music creator and work on mix & mastering freelancer together.',
+    pic: 'msc.webp',
   }
   
 ];
