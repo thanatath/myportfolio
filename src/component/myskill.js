@@ -8,6 +8,7 @@ class Myskill extends Component {
     return (
       <div
       data-aos="slide-right"
+      id='myskill'
       className='px-[18px] md:mt-[150px] md:px-[120px] md:relative md:right-[150px]'>
         <div className='pb-[50px] px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl '>
           <div className='bg-slate-100 relative top-[-17px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>

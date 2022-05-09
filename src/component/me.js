@@ -17,22 +17,26 @@ class MyName extends Component {
     const pic = 'img/' + me_info.pic;
     const about_me = me_info.about_me;
     return (
-      <div data-aos="fade-in" className=' w-full mx-auto mt-[50px] mb-[50px] '>
+      <div data-aos="fade-in" id='me' className=' w-full mx-auto mt-[50px] mb-[50px] '>
         <p className='text-center text-[20px] mb-[35px]'>Hola i'm</p>
         <h1 className='text-center text-[45px]'>{name}</h1>
         <h3 className='text-center text-[20px] mb-[35px]'>{lname}</h3>
 
         <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center'>
+          
           <button className='w-[150px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <FontAwesomeIcon className='px-1' icon={solid('address-card')} />
-        
+          <a href='https://github.com/thanatath' target='_blank'>
             Download CV
+            </a>
           </button>
 
           <button className='w-[120px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
-          
+          <a href='https://github.com/thanatath' target='_blank'>
           <FontAwesomeIcon className='px-1' icon={brands('github')} />
+          
             GITHUB
+            </a>
           </button>
         </div>
         <div className='flex  flex-col md:justify-center md:flex-row gap-[25px]'>

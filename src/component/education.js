@@ -5,7 +5,7 @@ import { education } from './data';
 class Education extends Component {
   render() {
     return (
-      <div data-aos="slide-left" className='px-[18px] mt-[60px] md:mt-[120px] md:px-[120px] md:relative md:left-[150px]'>
+      <div data-aos="slide-left" id='education' className='px-[18px] mt-[60px] md:mt-[120px] md:px-[120px] md:relative md:left-[150px]'>
         <div className='pb-[50px]   px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl '>
           <div className='bg-slate-100 relative top-[-17px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
             <h1 className='align-middle font-bold text-[20px]'>EDUCATION</h1>{' '}
