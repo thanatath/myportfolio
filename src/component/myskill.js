@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import {adventure_time} from 'react-json-pretty/themes/adventure_time.css';
 import { skilldatas } from './data.js';
+import JSONPretty from 'react-json-pretty';
 
+const code_props = {
+  code: JSON.stringify(skilldatas)
+
+}
 class Myskill extends Component {
+
+ 
+
   render() {
+
+
+
     return (
-      <div
+<div className='flex flex-col md:mt-[-60px] md:flex-row justify-center'>
+<div
       data-aos="slide-right"
       id='myskill'
-      className='px-[18px] md:mt-[150px] md:px-[120px] md:relative md:right-[150px]'>
+      className='px-[18px] md:mt-[150px] w-full md:w-[950px] md:relative'>
         <div className='pb-[50px] px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl '>
           <div className='bg-slate-100 relative top-[-17px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
             <h1 className='align-middle font-bold text-[20px]'>STACK SKILL</h1>{' '}
@@ -20,6 +33,17 @@ class Myskill extends Component {
           {render_skill(skilldatas)}
         </div>
       </div>
+      <div
+      data-aos="slide-left"
+      id='myskill'
+      className='  mt-[210px] hidden md:block w-[550px] relative '>
+        <div className='pb-[50px] pt-[35px] px-[25px] w-full bg-[#1e1e1e] rounded-[45px] shadow-xl '>
+
+{CodeComponent(code_props)}
+
+        </div>
+      </div>
+</div>
     );
   }
 }
@@ -55,6 +79,12 @@ function render_skill(skilldatas) {
       </div>
     );
   });
+}
+
+function CodeComponent(props) {
+  return (
+    <JSONPretty data={props.code}></JSONPretty>
+  );
 }
 
 export default Myskill;
