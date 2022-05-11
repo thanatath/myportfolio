@@ -13,7 +13,7 @@ class Work extends Component {
             <h1 className='align-middle font-bold text-[20px]'>EXPERIENCE</h1>{' '}
           </div>
 
-          <div className='myskill_box flex flex-col gap-2 md:grid md:grid-cols-2 '>
+          <div className='myskill_box flex flex-col gap-3 md:grid md:grid-cols-3 '>
             {box_render}
           </div>
         </div>
@@ -39,13 +39,16 @@ function work_box(work_data) {
     );
   }
 
+  let stack_bullet = work_data.stack_detail.map((id) => (<li>{id}</li>))
+
   return (
     <div
     data-aos="fade-in"
       key={work_data.project}
-      className='w-full md:w-[430px] md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-clip shadow-lg p-5 md:ease-in-out md:duration-300 rounded-[45px]'
+       
+      className='w-full md:w-full md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-hidden shadow-lg p-5 md:ease-in-out md:duration-300 rounded-[45px]'
     >
-      <div className='bg-[#34425E] h-[130px] relative top-[-20px] w-[150%] left-[-35px] rounded-t-[45px]'></div>
+      <div className='bg-[#34425E] h-[130px] relative top-[-20px] w-[150%] mx-[-30px] rounded-t-[45px]'></div>
 
       <div className=''>
         <img
@@ -58,7 +61,7 @@ function work_box(work_data) {
         {work_data.project}
       </h2>
 
-      <p className='mb-2 text-center underline text-[#004C4B]'>
+      <p className='mb-2 mt-[-45px] text-center underline text-[#004C4B]'>
         {work_data.type}{' '}
       </p>
       <p className=' mb-2'>
@@ -68,6 +71,12 @@ function work_box(work_data) {
       <p className=' mb-2 '>
         <span className='text-[#40908B] '>DETAIL: </span>
         <span className='text-black'>{work_data.detail}</span>
+        <span className='text-black'><ul className='list-disc px-[20px] my-[12px]'>{stack_bullet}</ul></span>
+        
+        
+
+
+
       </p>
 
       <p className=' mb-2 '>
