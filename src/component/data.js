@@ -6,7 +6,7 @@ export const me_info = {
     "Computer Engineer graduate passionate about full stack developer. Highly-capable Fast learner. passionate in a range of modern technologies including React, Nodejs, Jenkins, MySQL, and more. ",
   email: 'thanatach.as@gmail.com',
   phone: '+6696-281-0528',
-  cv: 'cv_thanatach_as.pdf',
+  cv: 'CV_THANATACH.pdf',
   github: 'https://github.com/thanatath',
   };
 

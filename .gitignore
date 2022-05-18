@@ -108,3 +108,5 @@ firebase.json
 build
 public/img
 .firebase/
+*.pdf
+src/component/data.js
