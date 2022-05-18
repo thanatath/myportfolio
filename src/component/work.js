@@ -13,7 +13,7 @@ class Work extends Component {
             <h1 className='align-middle font-bold text-[20px]'>EXPERIENCE</h1>{' '}
           </div>
 
-          <div className='myskill_box flex flex-col gap-3 md:grid md:grid-cols-3 '>
+          <div className='myskill_box flex flex-col gap-3 md:grid md:px-[35px] md:grid-cols-3 '>
             {box_render}
           </div>
         </div>
@@ -39,7 +39,7 @@ function work_box(work_data) {
     );
   }
 
-  let stack_bullet = work_data.stack_detail.map((id) => (<li>{id}</li>))
+  let stack_bullet = work_data.stack_detail.map((id) => (<li key={id}>{id}</li>))
 
   return (
     <div
@@ -68,16 +68,12 @@ function work_box(work_data) {
         <span className=' text-[#40908B]'>STACK:</span>{' '}
         {push_badge(work_data.stack)}
       </p>
-      <p className=' mb-2 '>
+      <div className=' mb-2 '>
         <span className='text-[#40908B] '>DETAIL: </span>
         <span className='text-black'>{work_data.detail}</span>
-        <span className='text-black'><ul className='list-disc px-[20px] my-[12px]'>{stack_bullet}</ul></span>
-        
-        
+        <span className='text-black'><ul className='list-disc px-[20px] my-[12px]'>{stack_bullet}</ul></span> 
 
-
-
-      </p>
+      </div>
 
       <p className=' mb-2 '>
         <span className='text-[#40908B] '>YEAR: </span>

@@ -12,7 +12,7 @@ class Navbar extends Component {
               <a href='#myskill'><FontAwesomeIcon className='px-1 z-40 mt-3 h-[25px]' icon={solid('utensils')} /></a>
               <a href='#education'><FontAwesomeIcon className='px-1 z-40 mt-3 h-[25px]' icon={solid('graduation-cap')} /></a>
               <a href='#work'><FontAwesomeIcon className='px-1 md:ml-1 z-40 mt-3 h-[25px]' icon={solid('building')} /></a>
-              <a href='#hobby'><FontAwesomeIcon className='px-1 z-40 mt-3 h-[25px]' icon={solid('table-tennis-paddle-ball')} /></a>
+              <a href='#award'><FontAwesomeIcon className='px-1 z-40 mt-3 h-[25px]' icon={solid('table-tennis-paddle-ball')} /></a>
               </div>
               </div>
           </div>

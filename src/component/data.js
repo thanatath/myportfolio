@@ -4,7 +4,11 @@ export const me_info = {
   pic: 'me.webp',
   about_me:
     "Computer Engineer graduate passionate about full stack developer. Highly-capable Fast learner. passionate in a range of modern technologies including React, Nodejs, Jenkins, MySQL, and more. ",
-};
+  email: 'thanatach.as@gmail.com',
+  phone: '+6696-281-0528',
+  cv: 'cv_thanatach_as.pdf',
+  github: 'https://github.com/thanatath',
+  };
 
 export const skilldatas = [
   {
@@ -78,7 +82,7 @@ export const work = [
     project: 'GAMESTORE',
     type: 'Student Assignment',
     github: 'https://github.com/thanatath/GameStore',
-    url: 'https://gamestore.shibasan.net/',
+    url: 'https://gamestore.thanatach.net/',
     detail: 'GameStore website with basic shop and payment system (use pure javascript, css and html)',
     stack_detail: ['ASP.NET for Model view controller page (Back-End)','SQLite for store goods data (database)','Docker for dotnet SDKs virtual environment container (DevOps)'],
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
@@ -88,7 +92,7 @@ export const work = [
     project: 'DFA ATM simulator',
     type: 'Student Assignment',
     github: 'https://github.com/thanatath/GameStore',
-    url: 'https://gamestore.shibasan.net/',
+    url: 'https://gamestore.thanatach.net/',
     detail: 'Deterministic Finite Automaton Web application purpose to simulation Automatic Teller Machine system for student assignment.',
     stack_detail: ['VueJS for single page rendering (Front-End)','Firebase for Hosting website  '],
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
@@ -98,7 +102,7 @@ export const work = [
     project: 'Place reservation system',
     type: 'Student Assignment',
     github: 'https://github.com/thanatath/Place-reservation-system-Frontend',
-    url: 'https://prs.shibasan.net/',
+    url: 'https://prs.thanatach.net/',
     detail: 'Place reservation system for reservation of places in KMITL campus',
     stack: 'VueJS, NodeJS, ExpressJS, Docker, Portainer, Parse Server, MongoDB',
     stack_detail: ['VueJS for single page rendering (Front-End)','Parse server for ORM database API and user authentication (Back-End)','Nginx for configuration round robin reverse proxy with Load-Balancing (DevOps)','Docker Swarm for cluster container in Load Balancing (DevOps)'],
