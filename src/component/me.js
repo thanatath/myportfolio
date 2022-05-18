@@ -16,23 +16,33 @@ class MyName extends Component {
     const lname = me_info.lname;
     const pic = 'img/' + me_info.pic;
     const about_me = me_info.about_me;
+    const email = me_info.email;
+    const phone = me_info.phone;
+    const github = me_info.github;
+    const cv = me_info.cv;
     return (
       <div data-aos="fade-in" id='me' className=' w-full mx-auto mt-[50px] mb-[50px] '>
         <p className='text-center text-[20px] mb-[35px]'>Hola i'm</p>
         <h1 className='text-center text-[45px]'>{name}</h1>
-        <h3 className='text-center text-[20px] mb-[35px]'>{lname}</h3>
+        <h3 className='text-center text-[20px] mb-[25px]'>{lname}</h3>
 
-        <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center'>
+        <div className='flex justify-center md:gap-8 mb-[25px]'>
+          <span><FontAwesomeIcon className='mx-2' icon={solid('envelope')} />{email}</span>
+          <span><FontAwesomeIcon className='mx-2' icon={solid('phone')} />{phone}</span>
+        
+        </div>
+
+        <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center relative md:left-[-17px]'>
           
           <button className='w-[150px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <FontAwesomeIcon className='px-1' icon={solid('address-card')} />
-          <a href='https://github.com/thanatath' target='_blank'>
+          <a href={cv} target='_blank'>
             Download CV
             </a>
           </button>
 
           <button className='w-[120px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
-          <a href='https://github.com/thanatath' target='_blank'>
+          <a href={github} target='_blank'>
           <FontAwesomeIcon className='px-1' icon={brands('github')} />
           
             GITHUB
