@@ -49,7 +49,7 @@ export const work = [
   {
     project: 'PERSONAL WEBSITE',
     type: 'Personal Project',
-    github: '',
+    github: 'None',
     url: 'https://portfolio.thanatach.net/',
     detail: 'Website contains link to my gallery and project',
     stack: 'ReactJS,Tailwind',
