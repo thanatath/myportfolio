@@ -3,7 +3,7 @@ export const me_info = {
   lname: 'ASSAWARATTANAKORN',
   pic: 'me.webp',
   about_me:
-    "Computer Engineer graduate passionate about full stack developer. Highly-capable Fast learner. passionate in a range of modern technologies including React, Nodejs, Jenkins, MySQL, and more. ",
+    "Computer engineer fresh graduate passionate about full stack web development, as well as, a range of modern technologies including React, Nodejs, Jenkins, MySQL, and more. Highly able learner.",
   email: 'thanatach.as@gmail.com',
   phone: '+6696-281-0528',
   cv: 'CV_THANATACH.pdf',
@@ -17,7 +17,7 @@ export const skilldatas = [
   },
   {
     label: 'BACK-END',
-    data: 'nodejs,parse server,dotnet,flask,swagger,redis',
+    data: 'nodejs,parse server,dotnet,flask,swagger',
   },
   {
     label: 'DEVOPS',
@@ -32,7 +32,7 @@ export const education = [
     label: 'king mongkut`s institute of technology ladkrabang',
     pic:'kmitl',
     major: 'Bachelor of Engineering in computer engineering',
-    gpa:'3.25',
+    gpa:'3.28',
     year: '2019 - Present',
   },
   {
@@ -55,7 +55,7 @@ export const work = [
     stack: 'ReactJS,Tailwind',
     stack_detail: ['ReactJS for Component rendering from my data (Front-End)','Tailwind for UI (Front-End)'],
     year: '2022',
-    pic: 'flora.webp',
+    pic: 'personal.png',
   },
   {
     project: 'FLORA VTUBER',
@@ -97,7 +97,7 @@ export const work = [
     stack_detail: ['VueJS for single page rendering (Front-End)','Firebase for Hosting website  '],
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
     year: '2021',
-    pic: 'gamestore.webp',
+    pic: 'dfa.png',
   },{
     project: 'Place reservation system',
     type: 'Student Assignment',
@@ -123,6 +123,17 @@ export const award = [
     label: 'Network Academic Skills',
     detail: 'Compete in Academic Skills Competition with Network Technology in an international race.',
     pic: 'it.webp',
+  },
+  {
+    label: 'Music composer',
+    detail: 'Compose and arrange music in free time and upload to social media platform.',
+    pic: 'mlb.jpg',
+  },
+  {
+    label: 'Mix & Mastering Freelancer',
+    detail: 'Freelancer Mix & Mastering jobs for personal business and many influencer oganization.',
+    link:'http://ratecard.shibasan.net/',
+    pic: 'ratecard.jpg',
   }
   
 ];

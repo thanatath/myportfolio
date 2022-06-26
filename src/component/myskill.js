@@ -15,7 +15,7 @@ class Myskill extends Component {
  
       modalContent:{
         title:'More Data',
-        text:(JSON.stringify(me_info,null,2)+'\n'+JSON.stringify(education,null,2)+'\n'+JSON.stringify(work,null,2)+'\n'+JSON.stringify(award,null,2)),
+        text:('Personal info \n'+JSON.stringify(me_info,null,2)+'\nEducation info \n'+JSON.stringify(education,null,2)+'\nWork info \n'+JSON.stringify(work,null,2)+'\nAward info \n'+JSON.stringify(award,null,2)),
         type:'code'
       }
     };
@@ -25,7 +25,7 @@ class Myskill extends Component {
     
 
     return (
-      <div className='flex flex-col md:mt-[-60px] md:flex-row justify-center'>
+      <div className='flex flex-col md:mt-[-60px] mt-[65px] md:flex-row justify-center'>
         <div
           data-aos='slide-right'
           id='myskill'

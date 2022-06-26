@@ -59,12 +59,13 @@ class MyName extends Component {
           </div>
           <div 
           data-aos="slide-left"
-          className=' w-full px-5 md:w-[450px] md:text-[black] md:bg-slate-100/90 md:px-[45px] md:py-[250px] rounded-[35px] h-full md:my-auto'>
+          className=' w-full px-5 md:w-[450px] md:text-[black] md:bg-slate-100/90 md:px-[45px] md:py-[250px] rounded-[35px] md:h-[600px] md:my-auto'>
             <h1 className='text-center'>About Me</h1>
 
             <p>{about_me}</p>
           </div>
         </div>
+        
       </div>
     );
   }
