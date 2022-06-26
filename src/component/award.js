@@ -34,7 +34,7 @@ class Award extends Component {
       let link_render = ''
 
       data.link != undefined ? link_render=(<div className='px-4 text-[15px] text=[black]'>
-      <span className='text-[#40908B]'>Link:</span> <span className='text-black underline'>  <a href={data.link}>{data.link}</a></span>
+      <span className='text-[#40908B]'>Link:</span> <span className='text-black underline'>  <a target='_blank' href={data.link}>{data.link}</a></span>
    </div>):link_render=null
 
 
