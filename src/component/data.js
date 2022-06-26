@@ -127,13 +127,13 @@ export const award = [
   {
     label: 'Music composer',
     detail: 'Compose and arrange music in free time and upload to social media platform.',
-    pic: 'mlb.jpg',
+    pic: 'mlb.webp',
   },
   {
     label: 'Mix & Mastering Freelancer',
     detail: 'Freelancer Mix & Mastering jobs for personal business and many influencer oganization.',
     link:'http://ratecard.shibasan.net/',
-    pic: 'ratecard.jpg',
+    pic: 'ratecard.webp',
   }
   
 ];
