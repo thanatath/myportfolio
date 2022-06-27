@@ -91,8 +91,8 @@ export const work = [
   },{
     project: 'DFA ATM simulator',
     type: 'Student Assignment',
-    github: 'https://github.com/thanatath/GameStore',
-    url: 'https://gamestore.thanatach.net/',
+    github: 'https://github.com/thanatath/DFA-ATM-Simulator',
+    url: 'https://dfa-atm.web.app/',
     detail: 'Deterministic Finite Automaton Web application purpose to simulation Automatic Teller Machine system for student assignment.',
     stack_detail: ['VueJS for single page rendering (Front-End)','Firebase for Hosting website  '],
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
