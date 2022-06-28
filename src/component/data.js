@@ -21,7 +21,7 @@ export const skilldatas = [
   },
   {
     label: 'DEVOPS',
-    data: 'docker,jenkins,portainer,nginx,apache,proxmox,unix',
+    data: 'docker,jenkins,portainer,proxmox,unix,sonarqube',
   },
 
 ];
@@ -49,13 +49,13 @@ export const work = [
   {
     project: 'PERSONAL WEBSITE',
     type: 'Personal Project',
-    github: 'None',
+    github: 'https://github.com/thanatath/myportfolio',
     url: 'https://portfolio.thanatach.net/',
     detail: 'Website contains link to my gallery and project',
     stack: 'ReactJS,Tailwind',
     stack_detail: ['ReactJS for Component rendering from my data (Front-End)','Tailwind for UI (Front-End)'],
     year: '2022',
-    pic: 'personal.png',
+    pic: 'personal.webp',
   },
   {
     project: 'FLORA VTUBER',
@@ -97,7 +97,7 @@ export const work = [
     stack_detail: ['VueJS for single page rendering (Front-End)','Firebase for Hosting website  '],
     stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
     year: '2021',
-    pic: 'dfa.png',
+    pic: 'dfa.webp',
   },{
     project: 'Place reservation system',
     type: 'Student Assignment',
