@@ -95,7 +95,7 @@ export const work = [
     url: 'https://dfa-atm.web.app/',
     detail: 'Deterministic Finite Automaton Web application purpose to simulation Automatic Teller Machine system for student assignment.',
     stack_detail: ['VueJS for single page rendering (Front-End)','Firebase for Hosting website  '],
-    stack: '.Net Core, CSS, HTML, Javascript, SQL Lite',
+    stack: 'Vuejs, CSS, HTML, Javascript, Firebase',
     year: '2021',
     pic: 'dfa.webp',
   },{
