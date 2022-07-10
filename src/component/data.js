@@ -1,5 +1,5 @@
 export const me_info = {
-  name: 'THANATATH',
+  name: 'THANATACH',
   lname: 'ASSAWARATTANAKORN',
   pic: 'me.webp',
   about_me:
@@ -17,7 +17,7 @@ export const skilldatas = [
   },
   {
     label: 'BACK-END',
-    data: 'nodejs,parse server,dotnet,flask,swagger',
+    data: 'nodejs,parse server,dotnet,flask,swagger,spring boot',
   },
   {
     label: 'DEVOPS',
