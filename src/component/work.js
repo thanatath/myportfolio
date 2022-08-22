@@ -40,6 +40,20 @@ function work_box(work_data) {
       </a>
     );
   }
+  var website = '';
+  if (work_data.url !== 'None') {
+    website = (
+      <a href={work_data.url} target='_blank'>
+        <button className='w-[120px]  shadow-sm hover:bg-[white] text-black hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
+        <FontAwesomeIcon
+              className='px-1  h-4 hover:h-5 ease-in-out duration-300'
+              icon={solid('sitemap')}
+            />
+          WEBSITE
+        </button>
+      </a>
+    );
+  }
 
   
 
@@ -91,18 +105,9 @@ function work_box(work_data) {
       </p>
 
       <div className='flex justify-center mt-[25px] gap-2'>
-        <a href={work_data.url} target='_blank'>
-          <button className='w-[150px] shadow-sm hover:bg-[white] text-black hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
-            <FontAwesomeIcon
-              className='px-1  h-4 hover:h-5 ease-in-out duration-300'
-              icon={solid('sitemap')}
-            />
-            WEBSITE
-          </button>
-        </a>
-
+      {website}
         {github}
-      </div>
+        </div>
     </div>
   );
 }
