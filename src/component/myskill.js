@@ -5,8 +5,13 @@ import { adventure_time } from 'react-json-pretty/themes/adventure_time.css';
 import { me_info,skilldatas,education,work,award } from './data.js';
 import JSONPretty from 'react-json-pretty';
 
+function combindJsonData(){
+  return {"Section":"All about me","Data":{me_info,skilldatas,education,work,award}}
+}
  
 class Myskill extends Component {
+
+
 
   constructor (props) {
     super(props);
@@ -15,7 +20,7 @@ class Myskill extends Component {
  
       modalContent:{
         title:'More Data',
-        text:('Personal info \n'+JSON.stringify(me_info,null,2)+'\nEducation info \n'+JSON.stringify(education,null,2)+'\nWork info \n'+JSON.stringify(work,null,2)+'\nAward info \n'+JSON.stringify(award,null,2)),
+        text:(combindJsonData()),
         type:'code'
       }
     };
