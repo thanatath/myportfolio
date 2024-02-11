@@ -59,7 +59,8 @@ function work_box(work_data) {
 
   return (
     <div
-    data-aos="fade-in"
+    data-aos="fade-up"
+    data-aos-duration="1200"
       key={work_data.project}
        
       className='w-full flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-hidden shadow-lg p-5 md:ease-in-out md:duration-300 rounded-[45px]'

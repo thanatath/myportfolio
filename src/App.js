@@ -12,7 +12,7 @@ import Modal from './component/Modal';
 import Works from './component/works';
 
 AOS.init({
-  duration: 800, // values from 0 to 3000, with step 50ms
+  duration: 800,
   once: true,  
 });
 

@@ -20,6 +20,7 @@ class MyName extends Component {
     const phone = me_info.phone;
     const github = me_info.github;
     const cv = me_info.cv;
+    const linkedin = me_info.linkedin;
     return (
       <div data-aos="fade-in" id='me' className=' w-full mx-auto mt-[50px] mb-[50px] '>
         <p className='text-center text-[20px] mb-[35px]'>Hola i'm</p>
@@ -41,6 +42,13 @@ class MyName extends Component {
           </a>
         </button>
 
+        <button className='w-[120px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
+          <a href={linkedin} target='_blank'>
+          <FontAwesomeIcon className='px-1' icon={brands('linkedin')} />
+          
+            Linkedin
+            </a>
+          </button>
 
           <button className='w-[120px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <a href={github} target='_blank'>

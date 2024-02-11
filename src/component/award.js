@@ -10,6 +10,7 @@ class Award extends Component {
     return (
       <div
         data-aos='fade-up'
+        data-aos-duration="1200"
         className='px-[18px] mt-[50px] md:mt-[120px] md:px-[120px] '
         id='award'
       >

@@ -79,6 +79,7 @@ function img_skill(data) {
   return data.split(',').map((data) => {
     return (
       <div
+        data-aos="zoom-out"
         key={data}
         className='h-[60px] md:h-[80px] m-auto my-[10px] md:my-[1px] py-3'
       >

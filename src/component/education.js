@@ -30,7 +30,8 @@ function render_education(education) {
   return education.map((education) => {
     return (
       <div
-      
+        data-aos="fade-up"
+        data-aos-duration="1200"
         key={education.label}
         className='p-[20px] md:pb-0 md:mb-[1px]  md:flex'
       >
