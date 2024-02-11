@@ -12,7 +12,7 @@ class Education extends Component {
           </div>
 
           <div className='border-l-4'>
-            <div>{render_education(work_experience)}</div>
+            <div>{render_work(work_experience)}</div>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@ class Education extends Component {
   }
 }
 
-function render_education(education) {
+function render_work(education) {
   return education.map((education) => {
     return (
       <div
