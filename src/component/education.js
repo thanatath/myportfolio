@@ -10,8 +10,7 @@ class Education extends Component {
           <div className='bg-slate-100 relative top-[-17px] h-[40px] z-50 text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
             <h1 className='align-middle font-bold  text-[20px]'>EDUCATION</h1>{' '}
           </div>
-
-          <div className='flex md:justify-between justify-center '>
+          <div className='flex md:justify-between justify-center border-l-4 '>
             <div>{render_education(education)}</div>
 
             <div className='hidden md:block'>
@@ -33,9 +32,9 @@ function render_education(education) {
       <div
       
         key={education.label}
-        className=' p-[20px] md:pb-0 md:mb-[1px]  md:flex'
+        className='p-[20px] md:pb-0 md:mb-[1px]  md:flex'
       >
-        <div  className='w-full p-[45px]  md:pt-[30px] rounded-[45px] md:h-[220px] h-[480px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
+        <div  className='w-full p-[45px]  md:pt-[30px] rounded-[45px] md:h-[220px] h-[450px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
           <div className='text-center flex flex-col md:w-3/4 m-auto'>
             <p className='font-bold'> {education.label} </p>
 

@@ -11,7 +11,7 @@ class Education extends Component {
             <h1 className='align-middle font-bold text-[20px]'>Work experience</h1>{' '}
           </div>
 
-          <div>
+          <div className='border-l-4'>
             <div>{render_education(work_experience)}</div>
           </div>
         </div>
@@ -28,7 +28,7 @@ function render_education(education) {
         key={education.label}
         className=' p-[20px] md:pb-0 md:mb-[1px]  md:flex'
       >
-        <div  className='w-full p-[45px]  md:pt-[30px] rounded-[45px] md:h-[200px] h-[480px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
+        <div  className='w-full md:p-[45px] p-[25px] md:pt-[30px] rounded-[45px] md:h-[200px] h-[280px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
           <div className='text-center flex flex-col md:w-3/4 m-auto'>
             <p className='font-bold text-[25px]'> {education.label} </p>
 
