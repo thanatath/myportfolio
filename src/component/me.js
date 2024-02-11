@@ -34,12 +34,13 @@ class MyName extends Component {
 
         <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center relative md:left-[-17px]'>
           
-          <button className='w-[150px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
+          <button style={{ opacity: !cv || cv.trim() === '' ? 0.2 : 1 }} disabled={!cv || cv.trim() === ''} className='w-[150px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <FontAwesomeIcon className='px-1' icon={solid('address-card')} />
           <a href={cv} target='_blank'>
             Download CV
-            </a>
-          </button>
+          </a>
+        </button>
+
 
           <button className='w-[120px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <a href={github} target='_blank'>
