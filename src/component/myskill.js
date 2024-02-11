@@ -30,30 +30,28 @@ class Myskill extends Component {
     
 
     return (
-      <div className='flex flex-col md:mt-[-60px] mt-[65px] md:flex-row justify-center'>
+      <div className='flex  md:mt-[-60px] mt-[65px] md:flex-row justify-center'>
         <div
           data-aos='slide-right'
           id='myskill'
-          className='px-[18px] md:mt-[150px] w-full md:w-[950px] md:relative'
+          className='px-[18px] w-full md:w-2/4 md:mt-[150px] '
         >
-          <div className='pb-[50px] px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl '>
-            <div className='bg-slate-100 relative top-[-17px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
+          <div className='bg-slate-100 relative top-[20px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
               <h1 className='align-middle font-bold text-[20px]'>
                 STACK SKILL
-              </h1>{' '}
+              </h1>
             </div>
-
-            <div className='relative bg-[white] h-[500px] hidden md:block -z-10 rounded-l-[45px] w-1/5 top-[-40px] mb-[-500px] left-[-25px]' />
-
-            {render_skill(skilldatas)}
+          <div className='md:pt-[0px] py-[30px] md:py-[0px] px-4 md:px-[25px] w-full overflow-hidden bg-slate-100/90 rounded-[50px] shadow-xl '>
+            
+            <div className=''>{render_skill(skilldatas)}</div>
           </div>
         </div>
         <div
           data-aos='slide-left'
           id='myskill'
-          className='  mt-[170px] hidden md:block w-[550px] relative '
+          className='mt-[190px] md:w-1/4 hidden md:block '
         >
-          <div className='pb-[40px] pt-[35px] px-[25px] w-full bg-[#1e1e1e] rounded-[45px] shadow-xl '>
+          <div className='pb-[40px] pt-[75px] px-[25px] w-full bg-[#1e1e1e] rounded-[45px] shadow-xl '>
             {CodeComponent(this.state)}
 
             <div className='flex justify-center'>
@@ -66,14 +64,6 @@ class Myskill extends Component {
               >
                 More Data
               </button>
-
-         
-
-
-
-
-             
-
 
             </div>
           </div>
@@ -90,13 +80,13 @@ function img_skill(data) {
     return (
       <div
         key={data}
-        className='h-[60px] md:h-[80px]  m-auto mx-[5px] my-[10px] md:my-[1px] py-3'
+        className='h-[60px] md:h-[80px] m-auto my-[10px] md:my-[1px] py-3'
       >
         <img
-          className='h-[60px] md:h-[80px] mx-auto'
+          className='h-[40px] md:hover:scale-125 duration-300 ease-in-out md:h-[50px] mx-auto'
           src={`img/${data}.webp`}
         />
-        <span className='hidden md:block font-softbold'>{data}</span>
+        <span className='font-softbold'>{data}</span>
       </div>
     );
   });
@@ -105,15 +95,15 @@ function img_skill(data) {
 function render_skill(skilldatas) {
   return skilldatas.map((skilldatas) => {
     return (
-      <div key={skilldatas.label} className='mb-[35px] md:mb-[45px] md:flex'>
-        <div className='md:w-1/4 w-full mx-auto mb-3 md:flex '>
-          <div className='text-[black]  rounded-[45px] md:my-auto md:ml-[25px] md:pt-[50px] bg-gray-100 md:bg-transparent font-semibold text-center  md:text-[20px]'>
+      <div key={skilldatas.label} className='md:flex '>
+        <div className='md:w-[200px] w-[200px] md:rounded-none rounded-lg md:py-20 mx-auto md:left-[-25px] z-50 relative md:flex bg-white '>
+          <div className='text-[black] bg-white rounded-[45px] md:my-auto md:ml-[25px] mt-8 md:pt-[50px] md:bg-transparent font-semibold text-center  md:text-[20px]'>
             {skilldatas.label}
           </div>
         </div>
-        <div className='w-full mx-auto'>
-          <div className='text-[black] justify-center md:justify-start text-center mt-2 flex flex-wrap'>
-            {img_skill(skilldatas.data)}
+        <div className='w-full mx-auto md:py-4 md:border-y-2 '>
+          <div className='text-[black]  grid md:grid-cols-5 grid-cols-4 justify-center md:justify-start text-center mt-2'>
+          {img_skill(skilldatas.data)}
           </div>
         </div>
       </div>
