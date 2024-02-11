@@ -63,6 +63,7 @@ export const me_info = {
   phone: '',
   cv: '',
   github: '',
+  linkedin: '',
   };
 
 export const skilldatas = [
