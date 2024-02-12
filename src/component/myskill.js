@@ -30,7 +30,7 @@ class Myskill extends Component {
     
 
     return (
-      <div className='flex  md:mt-[-60px] mt-[65px] md:flex-row justify-center'>
+      <div className='flex  md:mt-[-60px] mt-[20px] md:flex-row justify-center'>
         <div
           data-aos='slide-right'
           id='myskill'

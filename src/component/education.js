@@ -5,17 +5,20 @@ import { education } from './data';
 class Education extends Component {
   render() {
     return (
-      <div data-aos="fade-up" id='education' className='mt-[60px] mx-[20px] md:mt-[120px] flex justify-center '>
-        <div className='pb-[50px]   px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl md:w-[1039px] '>
-          <div className='bg-slate-100 relative top-[-17px] h-[40px] z-50 text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
-            <h1 className='align-middle font-bold  text-[20px]'>EDUCATION</h1>{' '}
-          </div>
-          <div className='flex md:justify-between justify-center border-l-4 '>
+      <div data-aos="fade-up" id='education' className='mt-[60px] mx-[20px] md:mt-[120px] flex flex-col justify-center '>
+        <div className='bg-slate-100 z-20  relative top-[20px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
+              <h1 className='align-middle font-bold text-[20px]'>
+                Education
+              </h1>
+            </div>
+        <div className='pb-[25px] pt-4 mx-auto md:px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl md:w-[1039px] overflow-clip'>
+        
+          <div className='flex md:justify-between justify-center md:border-l-4'>
             <div>{render_education(education)}</div>
 
             <div className='hidden md:block'>
               <img
-                className=' z-10 relative top-[-40px] w-[542px] rounded-r-[45px] left-[25px]  mb-[-150px] '
+                className='relative top-[-40px] w-[480px] left-[25px]  mb-[-150px] '
                 src={`img/me2.webp`}
               ></img>
             </div>
@@ -35,7 +38,7 @@ function render_education(education) {
         key={education.label}
         className='p-[20px] md:pb-0 md:mb-[1px]  md:flex'
       >
-        <div  className='w-full p-[45px]  md:pt-[30px] rounded-[45px] md:h-[220px] h-[450px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
+        <div  className='w-full p-[15px]  md:pt-[20px] rounded-[45px] md:h-[220px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
           <div className='text-center flex flex-col md:w-3/4 m-auto'>
             <p className='font-bold'> {education.label} </p>
 
@@ -53,9 +56,13 @@ function render_education(education) {
               className='w-[220px] mx-auto md:w-[150px]'
               src={`img/${education.pic}` + '.webp'}
             ></img>
+            <div className='mt-2 md:mt-2'>
+
             <span className=' text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 '>
               ({education.year})
             </span>
+
+            </div>
           </div>
         </div>
       </div>
