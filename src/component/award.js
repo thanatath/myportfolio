@@ -42,7 +42,7 @@ class Award extends Component {
       return <div key={data.label}>
           
 
-          <div data-aos='fade-up' className='bg-[white] md:h-[350px] mt-[25px] mx-auto w-[250px] md:w-[450px] pb-[20px] rounded-[25px] shadow-lg overflow-hidden '>
+          <div data-aos='fade-up' className='bg-[white] hover:shadow-lg duration-300 md:h-[350px] mt-[25px] mx-auto w-[250px] md:w-[450px] pb-[20px] rounded-[25px] shadow-sm overflow-hidden '>
 
               <div>
                 <img  src={'img/'+data.pic} />
@@ -59,11 +59,7 @@ class Award extends Component {
 
               {link_render}
 
-
-
-
           </div>
-
 
       </div>;
     }

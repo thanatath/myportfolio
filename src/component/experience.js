@@ -63,7 +63,7 @@ function work_box(work_data) {
     data-aos-duration="1200"
       key={work_data.project}
        
-      className='w-full flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-hidden shadow-lg p-5 md:ease-in-out md:duration-300 rounded-[45px]'
+      className='w-full hover:shadow-lg duration-300 flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-hidden shadow-sm p-5 md:ease-in-out md:duration-300 rounded-[45px]'
     >
       <div className='bg-[#34425E] h-[180px]  mb-[-155px]  relative top-[-20px] w-[150%] mx-[-30px] rounded-t-[45px]'></div>
 

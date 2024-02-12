@@ -36,9 +36,9 @@ function render_education(education) {
         data-aos="fade-up"
         data-aos-duration="1200"
         key={education.label}
-        className='p-[20px] md:pb-0 md:mb-[1px]  md:flex'
+        className='p-[20px] md:pb-0 md:mb-[1px] md:flex'
       >
-        <div  className='w-full p-[15px]  md:pt-[20px] rounded-[45px] md:h-[220px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
+        <div  className='w-full p-[15px] hover:shadow-lg duration-300 md:pt-[20px] rounded-[45px] md:h-[220px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
           <div className='text-center flex flex-col md:w-3/4 m-auto'>
             <p className='font-bold'> {education.label} </p>
 

@@ -29,7 +29,7 @@ function render_work(education) {
         key={education.label}
         className=' md:p-[20px] md:pb-0 md:mb-[1px]  md:flex'
       >
-        <div  className='w-full md:p-[45px] p-[10px] md:pt-[30px] rounded-[45px] md:h-[200px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
+        <div  className='w-full md:p-[45px] hover:shadow-lg duration-300 p-[10px] md:pt-[30px] rounded-[45px] md:h-[200px] bg-slate-100 text-[black] flex flex-col md:flex-row'>
           <div className='text-center flex flex-col md:w-3/4 m-auto'>
             <p className='font-bold text-[25px]'> {education.label} </p>
 
