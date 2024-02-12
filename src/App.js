@@ -10,7 +10,7 @@ import Award from './component/award';
 import Navbar from './component/navbar';
 import Modal from './component/Modal';
 import Works from './component/works';
-
+import Blogs  from './component/blogs';
 AOS.init({
   duration: 800,
   once: true,  
@@ -30,6 +30,7 @@ function App() {
         <Works />
         <Myskill onModalContent={(modalcontent)=>{setModalContent(modalcontent);setModal(true)}} />
         <Experience />
+        <Blogs />
         <Award />
         <Modal onclose={()=>{setModal(false)}} modal={showModal} modalContent={modalContent} />
         
