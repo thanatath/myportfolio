@@ -33,7 +33,7 @@ class MyName extends Component {
         
         </div>
 
-        <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center relative md:left-[-17px]'>
+        <div className='flex text-center w-full mx-auto mb-[25px] gap-8 justify-center '>
           
           <button style={{ display: !cv || cv.trim() === '' ? 'none' : 'block' }} disabled={!cv || cv.trim() === ''} className='w-[150px] shadow-md hover:bg-[white] hover:text-[black] ease-in-out duration-300 h-[50px] rounded-[15px] border-2'>
           <FontAwesomeIcon className='px-1' icon={solid('address-card')} />
