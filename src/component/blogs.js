@@ -43,7 +43,7 @@ class Blogs extends Component {
 
     function blogBox(data) {
       return (
-<div className="relative mx-auto bg-cover bg-center md:w-full">
+<div key={data.title} className="relative mx-auto bg-cover bg-center md:w-full">
   <img className="absolute h-full shadow-md duration-300 hover:shadow-lg w-full object-cover rounded-[25px]" src={data.image} />
   <div className="text-white md:w-1/2 ">
     <div className="bg-slate-600 duration-300 hover:bg-slate-700 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg md:p-12 rounded-[25px] md:rounded-l-[25px] md:rounded-r-none">
