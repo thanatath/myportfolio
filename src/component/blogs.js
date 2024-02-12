@@ -21,7 +21,8 @@ class Blogs extends Component {
     const blogList =
       this.state.blogList != null
         ? this.state.blogList.map((data) => blogBox(data))
-        : null;
+        : null ;
+    if(blogList == null) return ('');
     return (
       <div
         data-aos="fade-up"
