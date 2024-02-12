@@ -7,7 +7,7 @@ class Education extends Component {
     return (
       <div data-aos="fade-up" id='work_ex' className='mt-[50px] mx-[20px] md:mt-[120px] flex justify-center '>
         <div className='md:pb-[50px] pb-[40px]  px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl md:w-[1039px] '>
-          <div className='bg-slate-100 relative top-[-17px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[170px] text-center shadow-md'>
+          <div className='bg-slate-100 relative top-[-20px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[170px] text-center shadow-md'>
             <h1 className='align-middle font-bold text-[20px]'>Work experience</h1>{' '}
           </div>
 

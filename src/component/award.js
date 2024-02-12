@@ -15,7 +15,7 @@ class Award extends Component {
         id='award'
       >
         <div className='bg-slate-100/90 rounded-[45px] px-[35px] pt-[28px] pb-[45px]'>
-          <div className='bg-slate-100 relative top-[-45px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[280px] text-center shadow-md'>
+          <div className='bg-slate-100 relative top-[-50px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[280px] text-center shadow-md'>
             <h1 className='align-middle font-bold text-[20px]'>
               Award & Hobby
             </h1> 

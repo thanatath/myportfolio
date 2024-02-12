@@ -9,7 +9,7 @@ class Work extends Component {
     return (
       <div data-aos="fade-up" id='work' className='px-[25px] mt-[50px] md:mt-[120px] md:px-[120px] '>
         <div className='w-full px-5 mb-4  py-[45px] bg-slate-100/90 rounded-[50px] shadow-xl '>
-          <div className='bg-slate-100 relative top-[-60px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
+          <div className='bg-slate-100 relative top-[-65px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md'>
             <h1 className='align-middle font-bold text-[20px]'>EXPERIENCE</h1>{' '}
           </div>
 
