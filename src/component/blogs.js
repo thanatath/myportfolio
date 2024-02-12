@@ -46,7 +46,7 @@ class Blogs extends Component {
 <div className="relative mx-auto bg-cover bg-center md:w-full">
   <img className="absolute h-full shadow-md duration-300 hover:shadow-lg w-full object-cover rounded-[25px]" src={data.image} />
   <div className="text-white md:w-1/2 ">
-    <div className="bg-slate-600 hover:bg-slate-700 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg md:p-12 rounded-[25px] md:rounded-l-[25px] md:rounded-r-none">
+    <div className="bg-slate-600 duration-300 hover:bg-slate-700 bg-opacity-95 p-5 opacity-90 backdrop-blur-lg md:p-12 rounded-[25px] md:rounded-l-[25px] md:rounded-r-none">
       <p className="mb-4">{data.pubDate}</p>
       <h2 className="text-4xl font-bold">{data.title}</h2>
       <a href={data.link} target='_blank' className="mt-6 inline-block rounded-xl border-2 px-10 py-3 font-semibold border-white hover:bg-white hover:text-blue-600"> Read Now </a>
