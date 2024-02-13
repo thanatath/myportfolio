@@ -19,7 +19,7 @@ class Myskill extends Component {
       code_props:JSON.stringify(skilldatas),
  
       modalContent:{
-        title:'More Data',
+        title:'All Portfolio Data',
         text:(combindJsonData()),
         type:'code'
       }
