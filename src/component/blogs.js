@@ -97,7 +97,7 @@ class Blogs extends Component {
           </div>
           <div>
             <button
-              className="bg-blue-400 hover:bg-blue-600 duration-300 hover:scale-110 rounded-lg text-white px-4 py-2 rounded"
+              className="md:bg-blue-500 hover:bg-blue-600 bg-blue-600 duration-300 hover:scale-110 rounded-lg text-white px-4 py-2 rounded"
               onClick={handleButtonClick}
             >
                         <FontAwesomeIcon
