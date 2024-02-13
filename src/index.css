@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 body {
-    background-color: #1D283A;
-} 
+  background-color: #1d283a;
+}
 
-html { 
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}

@@ -21,11 +21,11 @@
     "xml2json": "^0.12.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npx prettier ./src --write & react-scripts start",
+    "build": "npx prettier ./src --write & react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "firebase": "react-scripts build & firebase deploy"
+    "firebase": "npx prettier ./src --write & & react-scripts build & firebase deploy"
   },
   "eslintConfig": {
     "extends": [

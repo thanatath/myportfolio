@@ -6,7 +6,7 @@ const mediumFetcher = async () => {
 
   const url = `https://medium.com/feed/@${mediumUser}`;
 
-  const proxyCors = `https://corsbypass.thanatuth-euro.workers.dev/proxy?modify&proxyUrl=${url}`; // <- dont try to use it. i protected with cors ^_^ 
+  const proxyCors = `https://corsbypass.thanatuth-euro.workers.dev/proxy?modify&proxyUrl=${url}`; // <- dont try to use it. i protected with cors ^_^
 
   const response = await fetch(proxyCors, {
     method: "get",

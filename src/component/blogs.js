@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { mediumFetcher } from "../utils/medium";
-import {me_info} from '../component/data'
+import { me_info } from "../component/data";
 class Blogs extends Component {
   constructor() {
     super();
@@ -71,26 +71,22 @@ class Blogs extends Component {
         </div>
       );
     }
-    function handleMediumErr(){
+    function handleMediumErr() {
       const handleButtonClick = () => {
-        const link = `https://medium.com/@${me_info.medium}`
-        window.open(link, '_blank');
+        const link = `https://medium.com/@${me_info.medium}`;
+        window.open(link, "_blank");
       };
       return (
         <div className="text-lg text-black my-auto mx-auto text-center">
           <div className="mb-4">
-          <div>
-          <FontAwesomeIcon
+            <div>
+              <FontAwesomeIcon
                 className="px-1 hover:scale-125 duration-300 z-40 mt-3 h-[55px]"
                 icon={solid("triangle-exclamation")}
               />
-          </div>
-            <span className="text-[40px]">
-            Oh, sorry !
-            </span>
-            <span className="block">
-               We cannot connect to the Medium API.
-            </span>
+            </div>
+            <span className="text-[40px]">Oh, sorry !</span>
+            <span className="block">We cannot connect to the Medium API.</span>
           </div>
           <div className="mb-4">
             <span className="block">You can still follow it from here!</span>
@@ -100,7 +96,7 @@ class Blogs extends Component {
               className="md:bg-blue-500 hover:bg-blue-600 bg-blue-600 duration-300 hover:scale-110 rounded-lg text-white px-4 py-2 rounded"
               onClick={handleButtonClick}
             >
-                        <FontAwesomeIcon
+              <FontAwesomeIcon
                 className="px-1 hover:scale-125 duration-300 z-40 h-[15px]"
                 icon={brands("medium")}
               />
