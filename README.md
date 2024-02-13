@@ -64,6 +64,7 @@ export const me_info = {
   cv: '',
   github: '',
   linkedin: '',
+  medium: '',
   };
 
 export const skilldatas = [
