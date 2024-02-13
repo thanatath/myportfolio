@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { checkMediunAlive } from "../utils/medium";
 class Navbar extends Component {
   render() {
-    const isMediumAlive = checkMediunAlive();
     return (
       <div>
         <div className="fixed hover:shadow-lg shadow-md rounded-[45px] bg-[#5d79bf] md:pl-[23px] md:py-[50px] z-30 w-[350px] md:w-[80px] inset-x-0 md:inset-x-auto mx-auto bottom-2 md:bottom-auto md:top-[25%] md:right-[80px] h-[50px] md:h-auto  ">
@@ -39,7 +37,7 @@ class Navbar extends Component {
                 icon={solid("puzzle-piece")}
               />
             </a>
-            {isMediumAlive === true ? (
+            {true ? (
               <a href="#blogs">
                 <FontAwesomeIcon
                   className="px-1 hover:scale-125 duration-300 md:ml-1 z-40 mt-3 h-[25px]"

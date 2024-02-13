@@ -1,8 +1,6 @@
 import { me_info } from "../component/data";
 import { convertXmlToJson } from "../utils/xml2json";
 
-var isMediumAlive;
-
 const mediumFetcher = async () => {
   const mediumUser = me_info.medium;
 
@@ -19,13 +17,8 @@ const mediumFetcher = async () => {
 
   const json = convertXmlToJson(response);
   const data = prepareData(json);
-  isMediumAlive = true;
   return data;
 };
-
-function checkMediunAlive(){
-    return isMediumAlive === true;
-}
 
 const prepareData = (data) => {
   const blogs = {
@@ -59,4 +52,4 @@ const prepareData = (data) => {
   return blogs;
 };
 
-export { mediumFetcher,checkMediunAlive };
+export { mediumFetcher };
