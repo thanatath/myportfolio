@@ -39,7 +39,7 @@ function render_work(education) {
           <div className="text-center flex flex-col md:w-3/4 m-auto">
             <p className="font-bold text-[25px]"> {education.label} </p>
 
-            <span className=" mt-[15px] text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">
+            <span className=" mt-[15px] text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ">
               {education.responsibility}
             </span>
           </div>
