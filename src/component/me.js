@@ -18,7 +18,7 @@ class MyName extends Component {
       <div
         data-aos="fade-in"
         id="me"
-        className=" w-full mx-auto mt-[50px] mb-[50px] "
+        className=" w-full mx-auto pt-[50px] mb-[50px]"
       >
         <p className="text-center text-[20px] mb-[35px]">Hola i'm</p>
         <h1 className="text-center text-[45px]">{name}</h1>
@@ -71,7 +71,7 @@ class MyName extends Component {
           </div>
           <div
             data-aos="slide-left"
-            className=" w-full px-5 md:w-[450px] md:text-[black] md:bg-slate-100/90 md:px-[45px] md:py-[250px] rounded-[35px] md:h-[600px] md:my-auto"
+            className=" w-full px-5 md:w-[450px] md:text-[black] md:bg-white md:px-[45px] md:py-[250px] rounded-[35px] md:h-[600px] md:my-auto"
           >
             <h1 className="text-center">About Me</h1>
 

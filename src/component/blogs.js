@@ -24,19 +24,28 @@ class Blogs extends Component {
         ? this.state.blogList.map((data) => blogBox(data))
         : null;
     return (
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1200"
-        className="px-[18px] mt-[50px] md:mt-[120px] md:px-[120px] "
-        id="blogs"
-      >
-        <div className="bg-slate-100/90 rounded-[45px] px-[35px] pt-[28px] pb-[45px]">
-          <div className="bg-slate-100 relative top-[-50px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[280px] text-center shadow-md">
-            <h1 className="align-middle font-bold text-[20px]">My Blogs</h1>
+      <div className="pt-[50px] pb-[100px] md:pt-[120px] md:px-[120px] bg-[#101010]">
+        <div className="text-center mb-16 ">
+          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4">
+            BLOG
           </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            My Sharing Knowledge
+          </h2>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div class="w-20 h-1 bg-white mx-auto"></div>
+        </div>
 
-          <div className="flex flex-col overflow-x-auto gap-6 h-[400px] md:p-[35px] ">
-            {blogList != null ? blogList : handleMediumErr()}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className="px-[18px] "
+          id="blogs"
+        >
+          <div className="bg-slate-100/90 rounded-[45px] px-[35px] pt-[28px] pb-[45px]">
+            <div className="flex flex-col overflow-x-auto gap-6 h-[400px] md:p-[35px] ">
+              {blogList != null ? blogList : handleMediumErr()}
+            </div>
           </div>
         </div>
       </div>

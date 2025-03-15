@@ -27,38 +27,46 @@ class Myskill extends Component {
   }
   render() {
     return (
-      <div className="flex  md:mt-[-60px] mt-[20px] md:flex-row justify-center">
-        <div
-          data-aos="slide-right"
-          id="myskill"
-          className="px-[18px] w-full md:w-2/4 md:mt-[150px] "
-        >
-          <div className="bg-slate-100 relative top-[20px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md">
-            <h1 className="align-middle font-bold text-[20px]">STACK SKILL</h1>
+      <div className="pt-[100px] md:mt-[150px] pb-[100px] bg-[#101010]">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4">
+            SKILL
           </div>
-          <div className="md:pt-[0px] py-[30px] md:py-[0px] px-4 md:px-[25px] w-full overflow-hidden bg-slate-100/90 rounded-[50px] shadow-xl ">
-            <div className="">{render_skill(skilldatas)}</div>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skill</h2>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div class="w-20 h-1 bg-white mx-auto"></div>
         </div>
-        <div
-          data-aos="slide-left"
-          id="myskill"
-          className="mt-[190px] md:w-1/4 hidden md:block "
-        >
-          <div className="pb-[40px] pt-[75px] px-[25px] w-full bg-[#1e1e1e] rounded-[45px] shadow-xl ">
-            {CodeComponent(this.state)}
 
-            <div className="flex justify-center">
-              <button
-                className="rounded-[45px] mt-[35px] text-black hover:text-[white] bg-[#f5bb12] h-[45px] w-[120px]"
-                data-modal-toggle="morecode_madal"
-                data-bs-toggle="modal"
-                onClick={() => {
-                  this.props.onModalContent(this.state.modalContent);
-                }}
-              >
-                More Data
-              </button>
+        <div className="flex md:flex-row justify-center">
+          <div
+            data-aos="slide-right"
+            id="myskill"
+            className="px-[18px] w-full md:w-2/4 "
+          >
+            <div className="md:pt-[0px] py-[30px] md:py-[0px] px-4 md:px-[25px] w-full overflow-hidden bg-slate-100/90 rounded-[50px] shadow-xl ">
+              <div className="">{render_skill(skilldatas)}</div>
+            </div>
+          </div>
+          <div
+            data-aos="slide-left"
+            id="myskill"
+            className="mt-[190px] md:w-1/4 hidden md:block "
+          >
+            <div className="pb-[40px] pt-[75px] px-[25px] w-full bg-[#1e1e1e] rounded-[45px] shadow-xl ">
+              {CodeComponent(this.state)}
+
+              <div className="flex justify-center">
+                <button
+                  className="rounded-[45px] mt-[35px] text-black hover:text-[white] bg-[#f5bb12] h-[45px] w-[120px]"
+                  data-modal-toggle="morecode_madal"
+                  data-bs-toggle="modal"
+                  onClick={() => {
+                    this.props.onModalContent(this.state.modalContent);
+                  }}
+                >
+                  More Data
+                </button>
+              </div>
             </div>
           </div>
         </div>

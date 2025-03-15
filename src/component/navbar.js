@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <div className="fixed hover:shadow-lg shadow-md rounded-[45px] bg-[#5d79bf] md:pl-[23px] md:py-[50px] z-30 w-[350px] md:w-[80px] inset-x-0 md:inset-x-auto mx-auto bottom-2 md:bottom-auto md:top-[25%] md:right-[80px] h-[50px] md:h-auto  ">
+        <div className="fixed hover:shadow-lg shadow-md rounded-[45px] bg-[#1e1e1e] md:pl-[23px] md:py-[50px] z-30 w-[350px] md:w-[80px] inset-x-0 md:inset-x-auto mx-auto bottom-2 md:bottom-auto md:top-[25%] md:right-[80px] h-[50px] md:h-auto  ">
           <div className="flex justify-center  md:flex-col gap-3">
             <a href="#me">
               <FontAwesomeIcon

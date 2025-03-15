@@ -10,13 +10,18 @@ class Work extends Component {
       <div
         data-aos="fade-up"
         id="work"
-        className="px-[25px] mt-[50px] md:mt-[120px] md:px-[120px] "
+        className="px-[25px] pb-[100px] mt-[50px] md:mt-[120px] md:px-[120px] "
       >
-        <div className="w-full px-5 mb-4  py-[45px] bg-slate-100/90 rounded-[50px] shadow-xl ">
-          <div className="bg-slate-100 relative top-[-65px] h-[40px] mb-[-35px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md">
-            <h1 className="align-middle font-bold text-[20px]">EXPERIENCE</h1>{" "}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4">
+            PROJECT
           </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Experience</h2>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div class="w-20 h-1 bg-white mx-auto"></div>
+        </div>
 
+        <div className="w-full px-5 mb-4  py-[45px] bg-slate-100/90 rounded-[50px] shadow-xl ">
           <div className="flex overflow-x-auto gap-3  md:px-[35px] ">
             {box_render}
           </div>
@@ -64,7 +69,7 @@ function work_box(work_data) {
       key={work_data.project}
       className="w-full hover:shadow-lg duration-300 flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px]  mt-2 bg-[white] overflow-hidden shadow-sm p-5 md:ease-in-out md:duration-300 rounded-[45px]"
     >
-      <div className="bg-[#34425E] h-[180px]  mb-[-155px]  relative top-[-20px] w-[150%] mx-[-30px] rounded-t-[45px]"></div>
+      <div className="bg-black h-[180px]  mb-[-155px]  relative top-[-20px] w-[150%] mx-[-30px] rounded-t-[45px]"></div>
 
       <div className="">
         <img

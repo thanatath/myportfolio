@@ -8,12 +8,18 @@ class Education extends Component {
       <div
         data-aos="fade-up"
         id="education"
-        className="mt-[60px] mx-[20px] md:mt-[120px] flex flex-col justify-center "
+        className="mt-[60px] py-[100px] px-[20px] md:mt-[120px] flex flex-col justify-center bg-[#101010]"
       >
-        <div className="bg-slate-100 z-20  relative top-[20px] h-[40px] text-[black] pt-1 mx-auto rounded-[25px] w-[150px] text-center shadow-md">
-          <h1 className="align-middle font-bold text-[20px]">Education</h1>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4">
+            Education
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">University</h2>
+          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div class="w-20 h-1 bg-white mx-auto"></div>
         </div>
-        <div className="pb-[25px] pt-4 mx-auto md:px-[25px] w-full bg-slate-100/90 rounded-[50px] shadow-xl md:w-[1039px] overflow-clip">
+
+        <div className="pb-[25px] pt-4 mx-auto md:px-[25px] w-full  rounded-[50px] shadow-xl md:w-[1039px] overflow-clip">
           <div className="flex md:justify-between justify-center md:border-l-4">
             <div>{render_education(education)}</div>
 
