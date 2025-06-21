@@ -11,6 +11,7 @@ import Navbar from "./component/navbar";
 import Modal from "./component/Modal";
 import Works from "./component/works";
 import Blogs from "./component/blogs";
+import SessionSharing from "./component/sessionsharing";
 AOS.init({
   duration: 800,
   once: true,
@@ -33,6 +34,7 @@ function App() {
           }}
         />
         <Experience />
+        <SessionSharing />
         <Blogs />
         <Award />
         <Modal

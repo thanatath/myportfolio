@@ -13,3 +13,63 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide scrollbar for session sharing horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar for session sharing */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #60a5fa #1e293b;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #60a5fa, #a855f7);
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  cursor: pointer;
+}
+
+/* Fix mobile image zoom issues */
+@media (max-width: 768px) {
+  .session-mobile-container {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .session-mobile-container img {
+    max-width: 100% !important;
+    max-height: 70vh !important;
+    height: auto !important;
+    object-fit: contain !important;
+    transform: none !important;
+  }
+
+  .session-mobile-container .group:hover img {
+    transform: none !important;
+  }
+
+  .session-mobile-container .bg-white\/10 {
+    transform: none !important;
+  }
+}
