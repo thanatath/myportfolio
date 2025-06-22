@@ -25,6 +25,14 @@ class Work extends Component {
           <div className="flex overflow-x-auto gap-3  md:px-[35px] ">
             {box_render}
           </div>
+          <div className="text-center mt-4 text-xs text-gray-500 select-none">
+            <span className="block md:hidden">
+              Swipe right/left to see more &rarr;
+            </span>
+            <span className="hidden md:block">
+              Scroll right/left to see more &rarr;
+            </span>
+          </div>
         </div>
       </div>
     );

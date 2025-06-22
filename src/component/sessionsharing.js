@@ -32,6 +32,14 @@ class SessionSharing extends Component {
               <div className="flex overflow-x-auto gap-3 md:px-[35px] custom-scrollbar">
                 {session_render}
               </div>
+              <div className="text-center mt-4 text-xs text-gray-300 select-none">
+                <span className="block md:hidden">
+                  Swipe right/left to see more &rarr;
+                </span>
+                <span className="hidden md:block">
+                  Scroll right/left to see more &rarr;
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -44,10 +52,10 @@ class SessionSharing extends Component {
           data-aos="fade-up"
           data-aos-duration="1200"
           key={index}
-          className="w-full hover:shadow-lg duration-300 flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px] mt-2 bg-white/10 overflow-hidden shadow-xl p-5 md:ease-in-out md:duration-300 rounded-[45px] border border-white/20"
-          style={{minHeight: '400px'}}
+          className="w-full hover:shadow-lg duration-300 flex-shrink-0 md:w-1/3 md:mx-auto mb-[35px] mt-2  overflow-hidden shadow-xl p-5 md:ease-in-out md:duration-300 rounded-[45px] border-white/20"
+          style={{ minHeight: "400px" }}
         >
-          <div className="relative overflow-hidden"  >
+          <div className="relative overflow-hidden">
             <img
               src={"img/" + data.pic}
               alt="Session Sharing Poster"
